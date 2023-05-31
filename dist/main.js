@@ -1,0 +1,1 @@
+(()=>{const n=(n=>{const s=[];return{length:5,hits:s,hit:n=>{s.includes(n)||n<0||n>=5||s.push(n)},isSunk:()=>5===s.length}})();console.log(n)})();
