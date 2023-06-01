@@ -1,23 +1,18 @@
 // Ship factory function
-const createShip = (length) => {
-    const hits = []
-
-    const hit = (position) => {
-        if (hits.includes(position) || position < 0 || position >= length) {
-            return
-        }
-        hits.push(position)
+const createShip = (lengthNum) => {
+    const length = lengthNum
+    let hitNum = 0
+    const hit = () => {
+        hitNum += 1
     }
+    const getHitNum = () => hitNum
     const isSunk = () => {
-        return hits.length === length
+        if (hitNum >= length) {
+            return true
+        }
+            return false
     }
-
-    return {
-        length,
-        hits,
-        hit,
-        isSunk
-    }
+    return { lengthNum, hitNum, hit, getHitNum, isSunk}
 }
-const myShip = createShip(5);
-console.log(myShip)
+
+module.exports = createShip

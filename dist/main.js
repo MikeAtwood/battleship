@@ -1,1 +1,1 @@
-(()=>{const n=(n=>{const s=[];return{length:5,hits:s,hit:n=>{s.includes(n)||n<0||n>=5||s.push(n)},isSunk:()=>5===s.length}})();console.log(n)})();
+(()=>{var t={138:t=>{const r=t=>{const r=[];return{length:t,hits:r,hit:e=>{r.includes(e)||e<0||e>=t||r.push(e)},isSunk:()=>r.length===t}},e=r(5);console.log(e),t.exports=r}},r={};!function e(n){var o=r[n];if(void 0!==o)return o.exports;var s=r[n]={exports:{}};return t[n](s,s.exports,e),s.exports}(138)})();
