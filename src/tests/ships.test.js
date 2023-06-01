@@ -1,4 +1,4 @@
-const createShip = require('../index')
+const createShip = require('../ship')
 
 test('Increases hit number by 1 when called', () => {
     const testShip = createShip(3)
